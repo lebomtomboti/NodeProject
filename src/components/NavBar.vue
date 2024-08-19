@@ -24,7 +24,7 @@
                         <router-link class="nav-link" to="/admin">Admin</router-link>
                     </li>
                     <li class="nav-item">
-                        <router-link class="nav-link" to="/reachUs">Contact Us</router-link>
+                        <router-link class="nav-link" to="/contactUs">Contact Us</router-link>
                     </li>
                     <ul class="userAccount navbar-nav">
                         <li class="nav-item">
@@ -36,3 +36,10 @@
         </div>
     </nav>
 </template>
+
+<script>
+</script>
+
+<style scoped>
+
+</style>

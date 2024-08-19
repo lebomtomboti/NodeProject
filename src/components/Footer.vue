@@ -1,17 +1,36 @@
 <template>
-    <div class="container-fluid">
+<footer class="container-fluid">
         <div class="row">
-            <p class="lead">
-                Vogue Vault &copy; <span id="currYear"></span>
-            </p>
+            <div class="footer">
+            <p class="lead">Vogue Vault &copy; <span class="shadow">{{ cYear }}</span></p>
         </div>
     </div>
+    </footer>
 </template>
 
 <script>
 export default {
     name: "FooterComp",
+    data() {
+        return {
+            cYear: new Date().getUTCFullYear()
+        }
+    }
 }
 </script>
 
-<style scoped></style>
+<style scoped>
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff; 
+  text-shadow: 2px 2px 5px #ffffff;
+  padding: 10px 0; 
+
+}
+</style>
