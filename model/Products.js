@@ -6,7 +6,7 @@ class Products{
         prodName,
         prodQuantity,
         prodAmount,
-        ProdDescription,
+        ProdCategory,
         ProdUrl,
         userID
         FROM Products;
@@ -25,7 +25,7 @@ class Products{
         prodName,
         prodQuantity,
         prodAmount,
-        ProdDescription,
+        ProdCategory,
         ProdUrl,
         userID
         FROM Products

@@ -6,7 +6,7 @@ h2{
     text-align: center;
 }
 h1 {
-    color: /*red*/white; 
+    color: white; 
 } 
 table {
     width: 100%;
@@ -20,7 +20,7 @@ table th, .route-table td {
     text-align: left;
 }
 table th {
-    background-color: /*red*/white;
+    background-color: white;
 }
 table caption {
     font-size: 1.2em;

@@ -7,7 +7,7 @@ import cors from "cors"
 import {config} from "dotenv"
 config()
 const app = express()
-const port = +process.env.PORT ||7000
+const port = +process.env.PORT ||4500
 app.use((req, res, next) =>{
   res.header("Access-control-Allow-Origin", "*");
   res.header("Access-control-Allow-Credentials", "true");

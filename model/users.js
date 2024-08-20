@@ -11,7 +11,8 @@ class Users{
         gender,
         emailAdd,
         userPwd,
-        userRole
+        userRole,
+        userProfile
         FROM Users;
         `
         db.query(qry, (err, results)=>{
@@ -31,7 +32,8 @@ class Users{
         gender,
         emailAdd,
         userPwd,
-        userRole
+        userRole,
+        userProfile
         FROM Users
         WHERE userID = ${req.params.id};
         `
