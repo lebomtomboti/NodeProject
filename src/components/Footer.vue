@@ -29,7 +29,7 @@ export default {
   left: 0;
   width: 100%;
   background-color: rgb(255, 255, 255);
-  text-shadow: 2px 2px 5px #afacac;
+  text-shadow: 2px 2px 5px #e3e3e3;
   padding: 10px 0;
   margin: 0;
 }

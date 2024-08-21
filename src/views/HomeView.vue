@@ -15,7 +15,7 @@
     </div>
     <div class="row gap-2 justify-content-center" v-if="recentProducts">
 
-      <Card v-for="product in recentProducts" :key="product.productID">
+      <Card v-for="product in recentProducts" :key="product.productID"> -->
         <!-- <template #cardHeader>
           {{ product.productURL }}
           <img :src="product.prodURL" loading="lazy" class="img-fluid" :alt="product.prodName">
@@ -25,7 +25,7 @@
           <p class="lead">{{ product.prodDescription }}</p>
           <p class="lead"><span class="text-success fw-bold">Amount</span>: R{{ product.amount }}</p>
         </template> -->
-      </Card>
+      <!-- </Card>
     </div>
     <div v-else>
       <Spinner />
@@ -82,7 +82,7 @@ export default {
   transform: translate(-50%, -50%); 
   color: rgb(0, 0, 0); 
   text-align: center; 
-  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.485); 
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.762); 
 }
 
 .banner-text h1 {
