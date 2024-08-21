@@ -1,5 +1,5 @@
 <template>
-  <section id="about-us" class="container my-5 pt-8">
+  <section id="about-us" class="container my-5 pt-5">
     <div class="row">
       <div class="col-md-6">
         <h2 class="about-heading">About Us</h2>
@@ -37,12 +37,13 @@ export default {
 #about-us h2 {
   font-size: 2.5rem;
   margin-bottom: 20px;
-  
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.762); 
 }
 
 #about-us p {
   font-size: 1.3rem;
   line-height: 1.6;
+  text-shadow: 2px 2px 4px rgba(214, 212, 212, 0.825); 
 }
 
 #about-us img {
