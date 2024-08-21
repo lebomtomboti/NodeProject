@@ -24,12 +24,14 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: fixed;
+  /* position: fixed; */
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: rgb(111, 111, 111);
+  background-color: rgb(255, 255, 255);
   text-shadow: 2px 2px 5px #afacac;
   padding: 10px 0;
+  margin: 0;
 }
+
 </style>

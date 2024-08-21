@@ -17,7 +17,9 @@
 nav {
     padding: 30px;
     font-family: "Averia Serif Libre", serif;
-    
+    z-index: 1030; 
+    position: fixed !important;
+    width: 100vw !important;
 }
 
 nav a {
@@ -29,10 +31,33 @@ nav a.router-link-exact-active {
     color: #000000;
 }
 
+/* .sticky-top {
+    position: -webkit-sticky;
+    position: fixed !important;
+    top: 0;
+    z-index: 1020; 
+} */
+
+
+html {
+    min-height: 100vh;
+    margin: 0;
+    overflow-x: hidden;
+}
+
 body {
     scroll-behavior: smooth;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    min-height: 100vh !important;
 }
+
+
 
 img[alt='logo'] {
     width: 5rem;
+}
+
+.row {
+    font-family: "Averia Serif Libre", serif;
 }
