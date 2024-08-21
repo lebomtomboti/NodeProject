@@ -28,9 +28,8 @@ export default {
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: #ffffff; 
+  background-color: rgb(111, 111, 111);
   text-shadow: 2px 2px 5px #afacac;
-  padding: 10px 0; 
-
+  padding: 10px 0;
 }
 </style>
