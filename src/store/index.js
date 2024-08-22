@@ -143,29 +143,29 @@ export default createStore({
         })
       }
     },
-    async recentProducts(context) {
-      try {
-        const { results, msg } = await (await axios.get(`${apiURL}products/recent`)).data
-        if (results) {
-          context.commit('setRecentProducts', results)
-        } else {
-          toast.error(`${msg}`, {
-            autoClose: 2000,
-            position: toast.POSITION.BOTTOM_CENTER
-          })
-        }
-      } catch (e) {
-        toast.error(`${e.message}`, {
-          autoClose: 2000,
-          position: toast.POSITION.BOTTOM_CENTER
-        })
-      }
-    },
+    // async recentProducts(context) {
+    //   try {
+    //     const { results, msg } = await (await axios.get(`${apiURL}products/recent`)).data
+    //     if (results) {
+    //       context.commit('setRecentProducts', results)
+    //     } else {
+    //       toast.error(`${msg}`, {
+    //         autoClose: 2000,
+    //         position: toast.POSITION.BOTTOM_CENTER
+    //       })
+    //     }
+    //   } catch (e) {
+    //     toast.error(`${e.message}`, {
+    //       autoClose: 2000,
+    //       position: toast.POSITION.BOTTOM_CENTER
+    //     })
+    //   }
+    // },
     async fetchProduct(context, id) {
       try {
         const { results, msg } = await (await axios.get(`${apiURL}products/${id}`)).data
         if (results) {
-          context.commit('setProduct', results)
+          context.commit('setProducts', results)
         } else {
           toast.error(`${msg}`, {
             autoClose: 2000,
