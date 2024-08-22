@@ -1,11 +1,11 @@
 import {connection as db} from "../config/index.js"
 import {hash, compare} from 'bcrypt'
-import { createToken } from  "../middleware/AuthenticateUser.js"
+import { createToken } from  "../middleware/AuthenticateUsers.js"
 class Users{
     fetchUsers(req, res) {
         const qry = `
-        SELECT 
-        FROM Users;
+        SELECT *
+        FROM users;
         `
         db.query(qry, (err, results)=>{
             if(err) throw err
@@ -17,15 +17,8 @@ class Users{
     }
     fetchUser(req, res) {
         const qry = `
-        SELECT userID,
-        firstName,
-        lastName,
-        userAge,
-        gender,
-        emailAdd,
-        userPwd,
-        userRole
-        FROM Users
+        SELECT *
+        FROM users
         WHERE userID = ${req.params.id};
         `
         db.query(qry, (err, result)=>{
@@ -44,7 +37,7 @@ class Users{
             userPwd: data.userPwd
         }
         const qry = `
-        INSERT INTO Users
+        INSERT INTO users
         SET ?;
         `
         db.query(qry, [data], (err)=>{
@@ -69,7 +62,7 @@ class Users{
             data.userPwd = await hash(data?.userPwd, 8)
         }
         const qry = `
-        UPDATE Users
+        UPDATE users
         SET ?
         WHERE userID = ${req.params.id};
         `
@@ -83,7 +76,7 @@ class Users{
     }
     deleteUser(req, res) {
         const qry = `
-        DELETE FROM Users
+        DELETE FROM users
         WHERE userID = ${req.params.id};
         `
         db.query(qry, (err)=>{
