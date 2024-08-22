@@ -6,7 +6,7 @@
       <img src="https://github.com/Kifaa26/images-js/blob/main/d-bags(1)(1).png?raw=true" alt="Fashion Banner" class="img-fluid banner-img " loading="lazy" />
       <div class="banner-text-box">
         <h1 class="display-1">Discover Luxury</h1>
-        <p class="lead">Exclusive designer bags at Vogue Vault</p>
+        <p class="lead text-light">Exclusive designer bags at Vogue Vault</p>
       </div>
       <div class="border-line top"></div>
       <div class="border-line bottom"></div>
