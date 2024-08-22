@@ -14,34 +14,34 @@ productRouter.get('/', (req, res)=>{
     }
 })
 productRouter.get('/:id', (req, res)=>{
-   try{
+    try{
         products.fetchProduct(req, res)
     }catch(e) {
         res.json({
             status: res.statusCode,
             msg: 'Failed to retrieve a product'
         })
-   }
+    }
 })
 productRouter.post('/addProduct', bodyParser.json(), (req, res)=>{
-   try{
-     products.addProduct(req, res)
-   }catch(e) {
+    try{
+        products.addProduct(req, res)
+    }catch(e) {
         res.json({
-         status: res.statusCode,
+            status: res.statusCode,
             msg: 'Failed to add a new product.'
-       })
-   }
+        })
+    }
 })
 productRouter.patch('/update/:id', bodyParser.json(), (req, res)=>{
     try{
         products.updateProduct(req, res)
     }catch(e) {
-       res.json({
+        res.json({
             status: res.statusCode,
             msg: "Failed to update a product."
         })
-   }
+    }
 })
 productRouter.delete('/delete/:id', (req, res)=>{
     try{

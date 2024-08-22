@@ -1,10 +1,8 @@
 import { Users } from './users.js';
-import { Products } from './models/products.js'; 
-
-const users = new Users();
-const products = new Products();
-
-export {
-  users,
-  products
+import { Products} from './products.js'
+let users = new Users()
+let products = new Products()
+export{
+    users,
+    products
 }
