@@ -14,7 +14,7 @@
         </p>
       </div>
       <div class="col-md-6">
-        <img src="https://github.com/Kifaa26/images-js/blob/main/Versace.jpg?raw=true" alt="Versace Bag" class="img-fluid">
+        <img src="https://github.com/Kifaa26/images-js/blob/main/Versace.jpg?raw=true" alt="Versace Bag" class="img-fluid" loading="lazy">
       </div>
     </div>
   </section>
@@ -30,24 +30,28 @@ export default {
 <style scoped>
 #about-us {
   background-color: #f9f9f9;
-  padding: 50px 0;
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 
 #about-us h2 {
   font-size: 2.5rem;
   margin-bottom: 20px;
-  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.762); 
+  text-shadow: 2px 2px 4px rgb(255, 255, 255); 
+  color: rgb(5, 5, 5),
 }
 
 #about-us p {
   font-size: 1.3rem;
   line-height: 1.6;
-  text-shadow: 2px 2px 4px rgba(214, 212, 212, 0.825); 
+  text-shadow: 2px 2px 4px rgb(255, 255, 255); 
 }
 
 #about-us img {
   border-radius: 8px 8px;
 }
+
 
 </style>

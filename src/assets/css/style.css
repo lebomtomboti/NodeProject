@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Oswald:wght@200..700&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 *,
 *::after,
@@ -16,10 +16,11 @@
 
 nav {
     padding: 30px;
-    font-family: "Averia Serif Libre", serif;
+    font-family: "Playfair Display", serif;
     z-index: 1030; 
     position: fixed !important;
     width: 100vw !important;
+    background-color: white;
 }
 
 nav a {
@@ -29,6 +30,7 @@ nav a {
 
 nav a.router-link-exact-active {
     color: #000000;
+    font-weight: bolder;
 }
 
 /* .sticky-top {
@@ -59,5 +61,5 @@ img[alt='logo'] {
 }
 
 .row {
-    font-family: "Averia Serif Libre", serif;
+    font-family: "Playfair Display", serif;
 }

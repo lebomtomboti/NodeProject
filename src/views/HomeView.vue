@@ -1,71 +1,51 @@
-<!-- <template>
+<template>
  <div class="row1">
       <h2 class="display-2 pt-5">Vogue Vault</h2>
     </div>
-  <div class="banner pt-5">
-      <img src="https://blog.fashionphile.com/wp-content/uploads/2022/10/Hero-7.jpg" alt="Fashion Banner" class="img-fluid banner-img" />
-      <div class="banner-text">
+  <div class="banner pt-4 pb-4 justify-content-center align-items-center">
+      <img src="https://github.com/Kifaa26/images-js/blob/main/d-bags(1)(1).png?raw=true" alt="Fashion Banner" class="img-fluid banner-img " loading="lazy" />
+      <div class="banner-text-box">
         <h1 class="display-1">Discover Luxury</h1>
-        <p class="lead">Exclusive designer products at Vogue Vault</p>
+        <p class="lead">Exclusive designer bags at Vogue Vault</p>
       </div>
+      <div class="border-line top"></div>
+      <div class="border-line bottom"></div>
     </div>
     
-    <div class="row">
-      <h4 class="display-4 pt-5">Recent products</h4>
-    </div>
-    <div class="row gap-2 justify-content-center" v-if="recentProducts">
 
-      <Card v-for="product in recentProducts" :key="product.productID"> -->
-        <!-- <template #cardHeader>
-          {{ product.productURL }}
-          <img :src="product.prodURL" loading="lazy" class="img-fluid" :alt="product.prodName">
-        </template>
-        <template #cardBody>
-          <h5 class="card-title fw-bold">{{ product.prodName }}</h5>
-          <p class="lead">{{ product.prodDescription }}</p>
-          <p class="lead"><span class="text-success fw-bold">Amount</span>: R{{ product.amount }}</p>
-        </template> -->
-      <!-- </Card>
-    </div>
-    <div v-else>
-      <Spinner />
-    </div>
 </template>
-
+ 
 <script>
-import Card from '@/components/Card.vue'
-import Spinner from '@/components/Spinner.vue'
-export default {
-  name: 'HomeView',
-  components: {
-    Card,
-    Spinner
-  },
-  // computed: {
-  //   recentProducts() {
-  //     return this.$store.state.recentProducts
-  //   }
-  // },
-  // mounted() {
-  //   this.$store.dispatch('recentProducts')
-  // }
-}
+
 </script>
 
 <style scoped>
 .banner {
   position: relative;
   width: 100%;
-  height: 60vh; 
-  overflow: hidden;
-  margin-bottom: 20px; 
+  height: 70%; 
+  overflow: hidden; 
+  text-align: center;
 }
 
 .banner-img {
   width: 100%;
-  height: 90vh; 
+  height: 60%; 
   object-fit: cover; 
   object-position: center; 
+}
+
+.banner-text-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.57);
+  padding: 20px;
+  color: white;
+  text-align: center;
+  width: fit-content;
+  max-width: 90%;
 }
 
 .container {
@@ -80,9 +60,9 @@ export default {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); 
-  color: rgb(0, 0, 0); 
+  color: rgb(255, 255, 255); 
   text-align: center; 
-  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.762); 
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.578); 
 }
 
 .banner-text h1 {
@@ -95,9 +75,40 @@ export default {
   margin: 10px 0 0 0;
 }
 
-.row1 {
-  text-align: center;
-  font-family: "Averia Serif Libre", serif;
+.border-line {
+  position: absolute;
+  height: 0.1rem;
+  background-color: rgb(5, 5, 5);
+  width: 100%;
+  animation: slide 2s linear infinite;
 }
 
-</style> -->
+.border-line.top {
+  top: 0;
+}
+
+.border-line.bottom {
+  bottom: 0;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.row1 {
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  padding: 20px; 
+}
+
+.row2 {
+  text-align: center;
+  font-family: "Playfair Display", serif;
+}
+
+</style>
