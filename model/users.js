@@ -1,10 +1,10 @@
 import {connection as db} from "../config/index.js"
 import {hash, compare} from 'bcrypt'
-import { createToken } from  "../middleware/AuthenticateUsers.js"
+import { createToken } from  "../middleware/AuthenticateUser.js"
 class Users{
     fetchUsers(req, res) {
         const qry = `
-        SELECT *
+        SELECT 
         FROM Users;
         `
         db.query(qry, (err, results)=>{
@@ -17,7 +17,14 @@ class Users{
     }
     fetchUser(req, res) {
         const qry = `
-        SELECT *
+        SELECT userID,
+        firstName,
+        lastName,
+        userAge,
+        gender,
+        emailAdd,
+        userPwd,
+        userRole
         FROM Users
         WHERE userID = ${req.params.id};
         `
