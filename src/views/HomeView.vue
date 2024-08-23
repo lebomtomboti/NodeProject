@@ -12,7 +12,7 @@
       <div class="border-line bottom"></div>
       </div>
       <div class="new-releases-section pt-5 pb-3">
-    <h3 class="display-4 text-center">New Releases</h3>
+    <h3 class="display-4 text-center">Check out our range of wallets</h3>
     <p class="lead text-center">Explore our latest collection of designer wallets. These exclusive pieces are a perfect blend of style and luxury, designed to elevate your fashion game. Discover the finest from YSL, Louis Vuitton, and Prada, now available in our New Releases section.</p>
     <div class="cards-container">
       <div class="card-item">
@@ -68,6 +68,7 @@
   text-align: center;
   width: fit-content;
   max-width: 90%;
+  max-width: 300px;
 }
 
 .container {
@@ -174,4 +175,58 @@
   font-family: "Playfair Display", serif;
 }
 
+@media (max-width: 768px) {
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-item {
+    width: 100%; 
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner-text-box {
+    left: 5%;
+    top: 15%;
+    max-width: 250px;
+  }
+
+  .banner-text-box h1 {
+    font-size: 1.5rem;
+  }
+
+  .banner-text-box p {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 768px) {
+  .banner-text-box {
+    max-width: 250px;
+  }
+
+  .banner-text-box h1 {
+    font-size: 1.5rem;
+  }
+
+  .banner-text-box p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner-text-box {
+    max-width: 200px;
+  }
+
+  .banner-text-box h1 {
+    font-size: 1.2rem;
+  }
+
+  .banner-text-box p {
+    font-size: 0.8rem;
+  }
+}
 </style>

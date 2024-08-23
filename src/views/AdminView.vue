@@ -2,7 +2,6 @@
   <div class="admin-page">
     <h1 class="display-4 text-center pt-5">Admin</h1>
 
-    <!-- Users Management -->
     <section class="management-section">
       <h2 class="display-5 text-center">Users</h2>
       <button class="btn btn-success mb-3" @click="openUserForm">Add User</button>
@@ -31,7 +30,6 @@
       </table>
     </section>
 
-    <!-- Products Management -->
     <section class="management-section">
       <h2 class="display-5 text-center">Products</h2>
       <button class="btn btn-success mb-3" @click="openProductForm">Add Product</button>
@@ -60,7 +58,6 @@
       </table>
     </section>
 
-    <!-- Modals for Adding/Editing Users/Products -->
     <UserFormModal v-if="showUserForm" @close="closeUserForm" @save="saveUser" :user="selectedUser"/>
     <ProductFormModal v-if="showProductForm" @close="closeProductForm" @save="saveProduct" :product="selectedProduct"/>
   </div>
