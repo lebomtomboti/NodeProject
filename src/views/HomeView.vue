@@ -10,9 +10,31 @@
       </div>
       <div class="border-line top"></div>
       <div class="border-line bottom"></div>
+      </div>
+      <div class="new-releases-section pt-5 pb-3">
+    <h3 class="display-4 text-center">New Releases</h3>
+    <p class="lead text-center">Explore our latest collection of designer wallets. These exclusive pieces are a perfect blend of style and luxury, designed to elevate your fashion game. Discover the finest from YSL, Louis Vuitton, and Prada, now available in our New Releases section.</p>
+    <div class="cards-container">
+      <div class="card-item">
+        <img src="https://github.com/Kifaa26/images-js/blob/main/YSL%20wallet.jpg?raw=true" class="card-img" alt="YSL Wallet">
+        <div class="card-body">
+          <h5 class="card-title">YSL Wallet</h5>
+        </div>
+      </div>
+      <div class="card-item">
+        <img src="https://github.com/Kifaa26/images-js/blob/main/louis%20vuitton%20wallet.jpg?raw=true" class="card-img" alt="Louis Vuitton Wallet">
+        <div class="card-body">
+          <h5 class="card-title">Louis Vuitton Wallet</h5>
+        </div>
+      </div>
+      <div class="card-item">
+        <img src="https://github.com/Kifaa26/images-js/blob/main/prada%20wallet.jpg?raw=true" class="card-img" alt="Prada Wallet">
+        <div class="card-body">
+          <h5 class="card-title">Prada Wallet</h5>
+        </div>
+      </div>
     </div>
-    
-
+    </div>
 </template>
  
 <script>
@@ -108,6 +130,47 @@
 
 .row2 {
   text-align: center;
+  font-family: "Playfair Display", serif;
+}
+
+.new-releases-section {
+  text-align: center;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px; 
+  padding: 20px 0;
+}
+
+.card-item {
+  width: 400px; 
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+.card-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.card-title {
+  font-size: 1.2rem; 
+  font-weight: bold;
+  margin: 0;
+  font-family: "Playfair Display", serif;
+}
+
+.new-releases-section {
   font-family: "Playfair Display", serif;
 }
 

@@ -3,7 +3,7 @@ import axios from 'axios'
 import { toast } from 'vue3-toastify'
 import 'vue3-toastify/dist/index.css'
 import router from '@/router'
-const apiURL = 'https://nodeproject-2-7s7p.onrender.com/'
+const apiURL = 'https://nodeproject-1-za5x.onrender.com/'
 export default createStore({
   state: {
     users: null,
