@@ -164,8 +164,7 @@
     "whatwg-url": "^5.0.0",
     "wide-align": "^1.1.5",
     "wrappy": "^1.0.2",
-    "yallist": "^4.0.0",
-    "yarn": "^1.22.22"
+    "yallist": "^4.0.0"
   },
   "scripts": {
     "start": "node index",
