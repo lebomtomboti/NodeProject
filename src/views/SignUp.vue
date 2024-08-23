@@ -34,12 +34,6 @@
                           required />
                   </span>
               </div>
-              <div class="form-control-wrapper">
-                  <span>
-                      <input class="form-control" type="url" placeholder="Profile link" v-model="payload.profileURL"
-                          required />
-                  </span>
-              </div>
               <div class="form-control-wrapper d-md-flex d-block justify-content-between">
                   <button type="submit" class="btn btn-success">Submit</button>
                   <button type="reset" class="btn btn-dark">Reset</button>
@@ -64,7 +58,6 @@ const payload = reactive({
   age: '',
   emailAdd: '',
   pwd: '',
-  profileURL: 'https://i.postimg.cc/3rZ0H0D8/profile-Image.png'
 })
 function register() {
   store.dispatch('register', payload)
